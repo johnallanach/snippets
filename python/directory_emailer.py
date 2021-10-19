@@ -5,13 +5,15 @@ from email.mime.base import MIMEBase
 from email import encoders
 import os
 
+from config import SENDER_ADDRESS, SENDER_PASSWORD, RECEIVER_ADDRESS
+
 
 def emailer(filepath):
 
     # set emails and password
-    sender_address = 'herbbanjoes@gmail.com'
-    sender_password = 'An0nym0us'
-    receiver_address = 'shanejobber@gmail.com'
+    sender_address = SENDER_ADDRESS
+    sender_password = SENDER_PASSWORD
+    receiver_address = RECEIVER_ADDRESS
   
     #Setup the MIME
     message = MIMEMultipart()
@@ -53,8 +55,7 @@ def emailer(filepath):
 
 def main():
 
-    directory_path = r"C:\Users\Shane\Dropbox\Dev\Scratch\data"
-
+    directory_path = input("Path of directory to be emailed: ")
     file_count = 0
     for item in os.scandir(directory_path):
         if item.is_file():
