@@ -1,14 +1,15 @@
 # explanation of fields in API response: 
 # https://openweathermap.org/api/one-call-api
 
-import requests
-import json 
 import datetime
+import json 
+import requests
+
+from config import OPENWEATHER_API
+
 
 # complete url address 
-complete_url =  "https://api.openweathermap.org/data/2.5/onecall"\
-                "?lat=43.5501&lon=-80.2497&appid="\
-                "a5ca3329d3bde61767dd81690b641cd2"
+complete_url =  "https://api.openweathermap.org/data/2.5/onecall?lat=43.5501&lon=-80.2497&appid=" + OPENWEATHER_API
 
 # get method of requests module 
 # return response object 
