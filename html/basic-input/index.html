@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>First Form</title>
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<style>
+			body {font-family: Arial, Helvetica, sans-serif;}
+			* {box-sizing: border-box;}
+			
+			input[type=text], select, textarea {
+			  width: 100%;
+			  padding: 12px;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  box-sizing: border-box;
+			  margin-top: 6px;
+			  margin-bottom: 16px;
+			  resize: vertical;
+			}
+			
+			input[type=submit] {
+			  background-color: #9c9c9c;
+			  color: white;
+			  padding: 12px 20px;
+			  border: none;
+			  border-radius: 4px;
+			  cursor: pointer;
+			}
+			
+			input[type=submit]:hover {
+			  background-color: #636363;
+			}
+			
+			.container {
+			  border-radius: 5px;
+			  background-color: #f2f2f2;
+			  padding: 20px;
+			}
+			</style>
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+    		</ul>
+		</nav>
+        
+        <h3>First Form</h3>
+		<div class="container">
+			<form action="action_page.php">
+		  
+			  <label for="fname">Address to find:</label>
+			  <input type="text" id="address" name="address" placeholder="Address..">
+		  
+			  <input type="submit" value="Submit">
+		  
+			</form>
+		  </div>
+
+		<h3> </h3>
+
+		<footer>
+    		<ul>
+        		<li><a href="mailto:j8hnallanach@gmail.com">email</a></li>
+        		<li><a href="https://github.com/johnallanach">github.com/johnallanach</a></li>
+			</ul>
+        </footer>
+        
+	</body>
+</html>
